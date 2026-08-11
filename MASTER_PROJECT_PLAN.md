@@ -1120,44 +1120,37 @@ chore: cập nhật .gitignore, requirements.txt, ...
 ```
 Password-Manager/
 │
-├── README.md                    ← Hướng dẫn cài đặt, chạy app, tính năng
-├── requirements.txt             ← cryptography (chỉ cần 1 lib ngoài)
-├── .gitignore                   ← *.db, __pycache__, .env, data/
+├── README.md
+├── requirements.txt
+├── .gitignore
 │
 ├── src/
-│   ├── security.py              ← M1: PBKDF2 + Fernet
-│   ├── generator.py             ← M1: password gen + strength check
-│   ├── database.py              ← M2: SQLite CRUD
-│   ├── app.py                   ← Controller (cả nhóm)
+│   ├── security.py
+│   ├── generator.py
+│   ├── database.py
+│   ├── app.py
 │   └── ui/
 │       ├── __init__.py
-│       ├── login_window.py      ← M3
-│       ├── main_window.py       ← M3
-│       └── dialogs.py           ← M3
+│       ├── login_window.py
+│       ├── main_window.py
+│       └── dialogs.py
 │
 ├── tests/
-│   ├── test_security.py         ← M1
-│   ├── test_generator.py        ← M1
-│   ├── test_database.py         ← M2
-│   ├── test_integration_mock.py ← M1 + M2
-│   └── test_integration.py      ← Cả nhóm
+│   ├── test_security.py
+│   ├── test_generator.py
+│   ├── test_database.py
+│   ├── test_integration_mock.py
+│   └── test_integration.py
 │
 ├── data/
-│   ├── common_passwords.txt     ← Static file (commit OK)
+│   ├── common_passwords.txt
 │   └── .gitkeep
 │
 └── docs/
-    ├── INTERFACE_CONTRACT.md    ← Viết W2
-    ├── ARCHITECTURE.md          ← M1 viết W8
-    ├── REQUIREMENTS.md          ← M2 viết W8
-    └── TEST_PLAN.md             ← M3 viết W7
-│
-└── project/
-    ├── ROADMAP.md
-    └── weekly/
-        ├── W1.md
-        ├── W2.md
-        └── ... W9.md
+    ├── INTERFACE_CONTRACT.md
+    ├── ARCHITECTURE.md
+    ├── REQUIREMENTS.md
+    └── TEST_PLAN.md
 ```
 
 **Không tạo:** `config/`, `scripts/`, `assets/`, `migrations/` — không cần thiết cho project này.
